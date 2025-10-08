@@ -86,12 +86,7 @@
           },
           "id": "0199be14-94f1-734d-92dc-d49c779c6815",
           "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
-          "tags": [
-            {
-              "descriptor": { "code": "ADDITIONAL_DETAILS_REQUIRED" },
-              "value": "FALSE"
-            }
-          ],
+
           "time": { "duration": "P2D", "label": "VALIDITY" }
         },
         {
@@ -105,12 +100,7 @@
           "id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
           "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
           "parent_item_id": "0199be14-94f1-734d-92dc-d49c779c6815",
-          "tags": [
-            {
-              "descriptor": { "code": "ADDITIONAL_DETAILS_REQUIRED" },
-              "value": "FALSE"
-            }
-          ],
+
           "time": { "duration": "P2D", "label": "VALIDITY" }
         },
         {
@@ -125,12 +115,7 @@
           "parent_item_id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
           "price": { "currency": "INR", "value": "100" },
           "quantity": { "selected": { "count": 1 } },
-          "tags": [
-            {
-              "descriptor": { "code": "ADDITIONAL_DETAILS_REQUIRED" },
-              "value": "FALSE"
-            }
-          ],
+
           "time": { "duration": "P2D", "label": "VALIDITY" }
         }
       ],

@@ -1,0 +1,1652 @@
+{
+  "success": false,
+  "response": {
+    "message": "Logs were not verified successfully",
+    "report": {
+      "on_confirm": "Missing required data of : on_confirm",
+      "on_status": {
+        "schemaErr0": "/message/order/status must be equal to one of the allowed values (COMPLETED)",
+        "itm": "id is missing"
+      },
+      "on_cancel_1": "Missing required data of : on_cancel_1"
+    },
+    "bpp_id": "SELLER_APP_SUBSCRIBER_ID",
+    "bap_id": "BUYER_APP_SUBSCRIBER_ID",
+    "domain": "ONDC:TRV14",
+    "payload": {
+      "onconfirm": {
+        "context": {
+          "action": "on_confirm",
+          "bap_id": "ondc.preprod.rzervit.com",
+          "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+          "bpp_id": "ondc.preprod.rzervit.com",
+          "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+          "domain": "ONDC:TRV14",
+          "location": {
+            "city": {
+              "code": "std:011"
+            },
+            "country": {
+              "code": "IND"
+            }
+          },
+          "message_id": "90550b1b-08f0-44ab-b46d-1c9d5bb9bd72",
+          "timestamp": "2025-10-07T18:32:17.509Z",
+          "transaction_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd",
+          "ttl": "PT30S",
+          "version": "2.0.0"
+        },
+        "message": {
+          "order": {
+            "billing": {
+              "email": "john@example.com",
+              "name": "john Doe",
+              "phone": "+91-9879876787"
+            },
+            "cancellation_terms": [
+              {
+                "cancel_by": {
+                  "duration": "PT2H30M",
+                  "label": "DURATION"
+                },
+                "cancellation_eligible": true,
+                "cancellation_fee": {
+                  "percentage": "10"
+                },
+                "fulfillment_state": {
+                  "descriptor": {
+                    "code": "CONFIRMED"
+                  }
+                }
+              }
+            ],
+            "created_at": "2025-10-07T18:32:17.509Z",
+            "fulfillments": [
+              {
+                "id": "0199be1c-db4b-72a9-beff-94a6d37d793c",
+                "state": {
+                  "descriptor": {
+                    "code": "CONFIRMED"
+                  }
+                },
+                "stops": [
+                  {
+                    "authorization": {
+                      "status": "UNCLAIMED",
+                      "token": "MWMxODVlZWEtMDc2Ny00ZTAyLTk5YTgtNTMyZWNhZWQ2ZWIw",
+                      "type": "QR",
+                      "valid_to": "2025-10-09T10:30:00.000Z"
+                    },
+                    "time": {
+                      "range": {
+                        "end": "2025-10-09T10:30:00.000Z",
+                        "start": "2025-10-09T02:30:00.000Z"
+                      }
+                    },
+                    "type": "START"
+                  }
+                ],
+                "type": "VISIT",
+                "vehicle": {
+                  "category": "SITE"
+                }
+              }
+            ],
+            "id": "1c185eea-0767-4e02-99a8-532ecaed6eb0",
+            "items": [
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ABSTRACT",
+                  "images": [
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/3122522f-dba9-43aa-aa57-ad5d0926b0ab"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/ec9aa5cb-0d30-4dfd-8247-733ca6623f54"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/c6df476c-b12f-4c45-91b3-a630dcc2a494"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/96f298df-b713-4b23-8c42-4924fc5f1aae"
+                    }
+                  ],
+                  "long_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\". The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\".",
+                  "name": "Taj Mahal",
+                  "short_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \""
+                },
+                "id": "0199be14-94f1-734d-92dc-d49c779c6815",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              },
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ABSTRACT",
+                  "images": [],
+                  "name": "Walking Tour",
+                  "short_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\"."
+                },
+                "id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "parent_item_id": "0199be14-94f1-734d-92dc-d49c779c6815",
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              },
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ENTRY_PASS",
+                  "images": [],
+                  "name": "Adult"
+                },
+                "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665_100_199",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "parent_item_id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+                "price": {
+                  "currency": "INR",
+                  "value": "100"
+                },
+                "quantity": {
+                  "selected": {
+                    "count": 1
+                  }
+                },
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              }
+            ],
+            "payments": [
+              {
+                "collected_by": "BAP",
+                "id": "7bdd35af-be0b-43cb-adc3-27950e68888e",
+                "params": {
+                  "amount": "100.00",
+                  "currency": "INR",
+                  "transaction_id": "HDENTRYPASS0000001348"
+                },
+                "status": "PAID",
+                "type": "PRE-ORDER"
+              }
+            ],
+            "provider": {
+              "descriptor": {
+                "images": [
+                  {
+                    "size_type": "md",
+                    "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/"
+                  }
+                ],
+                "name": "paris tours"
+              },
+              "id": "RZ6C8028",
+              "locations": [
+                {
+                  "descriptor": {
+                    "name": "Delhi",
+                    "short_desc": "agra "
+                  },
+                  "gps": "27.167869,78.050761",
+                  "id": "0199be1a-291c-77c1-8ac6-f74cfc7b9e2f",
+                  "rating": "5"
+                }
+              ]
+            },
+            "quote": {
+              "breakup": [
+                {
+                  "item": {
+                    "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665",
+                    "price": {
+                      "currency": "INR",
+                      "value": "100"
+                    },
+                    "quantity": {
+                      "selected": {
+                        "count": 1
+                      }
+                    }
+                  },
+                  "price": {
+                    "currency": "INR",
+                    "value": "100.00"
+                  },
+                  "title": "BASE_PRICE"
+                },
+                {
+                  "price": {
+                    "currency": "INR",
+                    "value": "0.00"
+                  },
+                  "title": "TAX"
+                }
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              }
+            },
+            "replacement_terms": [
+              {
+                "external_ref": {
+                  "mimetype": "text/html",
+                  "url": "https://api.unreserved-entry-pass.com/beckn/replacement.html"
+                }
+              }
+            ],
+            "status": "ACTIVE",
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "BAP_TERMS",
+                  "name": "BAP Terms of Engagement"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                    },
+                    "value": "1"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_TYPE"
+                    },
+                    "value": "percent"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_WINDOW"
+                    },
+                    "value": "P30D"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BASIS"
+                    },
+                    "value": "INVOICE_RECEIPT"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "STATIC_TERMS"
+                    },
+                    "value": "https://api.example-bap.com/booking/terms"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "BPP_TERMS",
+                  "name": "BPP Terms of Engagement"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                    },
+                    "value": "1"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_TYPE"
+                    },
+                    "value": "percent"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "STATIC_TERMS"
+                    },
+                    "value": "https://api.example-bap.com/booking/terms"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MANDATORY_ARBITRATION"
+                    },
+                    "value": "true"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "COURT_JURISDICTION"
+                    },
+                    "value": "New Delhi"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "DELAY_INTEREST"
+                    },
+                    "value": "2.5"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_AMOUNT"
+                    },
+                    "value": "99 INR"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_TYPE"
+                    },
+                    "value": "NEFT"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BANK_CODE"
+                    },
+                    "value": "SBIN000001"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BANK_ACCOUNT_NUMBER"
+                    },
+                    "value": "101010101010"
+                  }
+                ]
+              }
+            ],
+            "updated_at": "2025-10-07T18:32:17.509Z"
+          }
+        }
+      },
+      "status": {
+        "context": {
+          "action": "status",
+          "bap_id": "ondc.preprod.rzervit.com",
+          "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+          "bpp_id": "ondc.preprod.rzervit.com",
+          "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+          "domain": "ONDC:TRV14",
+          "location": {
+            "city": {
+              "code": "std:011"
+            },
+            "country": {
+              "code": "IND"
+            }
+          },
+          "message_id": "5b1767e7-154f-4dac-a1fb-a3a88c0535b2",
+          "timestamp": "2025-10-07T18:33:47.636Z",
+          "transaction_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd",
+          "ttl": "PT30S",
+          "version": "2.0.0"
+        },
+        "message": {
+          "ref_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd"
+        }
+      },
+      "on_status": {
+        "context": {
+          "action": "on_status",
+          "bap_id": "ondc.preprod.rzervit.com",
+          "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+          "bpp_id": "ondc.preprod.rzervit.com",
+          "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+          "domain": "ONDC:TRV14",
+          "location": {
+            "city": {
+              "code": "std:011"
+            },
+            "country": {
+              "code": "IND"
+            }
+          },
+          "message_id": "5b1767e7-154f-4dac-a1fb-a3a88c0535b2",
+          "timestamp": "2025-10-07T18:33:47.759Z",
+          "transaction_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd",
+          "ttl": "PT30S",
+          "version": "2.0.0"
+        },
+        "message": {
+          "order": {
+            "billing": {
+              "email": "john@example.com",
+              "name": "john Doe",
+              "phone": "+91-9879876787"
+            },
+            "cancellation_terms": [
+              {
+                "cancel_by": {
+                  "duration": "PT2H30M",
+                  "label": "DURATION"
+                },
+                "cancellation_eligible": true,
+                "cancellation_fee": {
+                  "percentage": "10"
+                },
+                "fulfillment_state": {
+                  "descriptor": {
+                    "code": "CONFIRMED"
+                  }
+                }
+              }
+            ],
+            "created_at": "2025-10-07T18:32:17.544Z",
+            "fulfillments": [
+              {
+                "id": "0199be1c-db4b-72a9-beff-94a6d37d793c",
+                "state": {
+                  "descriptor": {
+                    "code": "CONFIRMED"
+                  }
+                },
+                "stops": [
+                  {
+                    "authorization": {
+                      "status": "UNCLAIMED",
+                      "token": "MWMxODVlZWEtMDc2Ny00ZTAyLTk5YTgtNTMyZWNhZWQ2ZWIw",
+                      "type": "QR",
+                      "valid_to": "2025-10-09T10:30:00.000Z"
+                    },
+                    "time": {
+                      "range": {
+                        "end": "2025-10-09T10:30:00.000Z",
+                        "start": "2025-10-09T02:30:00.000Z"
+                      }
+                    },
+                    "type": "START"
+                  }
+                ],
+                "type": "VISIT",
+                "vehicle": {
+                  "category": "SITE"
+                }
+              }
+            ],
+            "id": "1c185eea-0767-4e02-99a8-532ecaed6eb0",
+            "items": [
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ABSTRACT",
+                  "images": [
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/3122522f-dba9-43aa-aa57-ad5d0926b0ab"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/ec9aa5cb-0d30-4dfd-8247-733ca6623f54"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/c6df476c-b12f-4c45-91b3-a630dcc2a494"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/96f298df-b713-4b23-8c42-4924fc5f1aae"
+                    }
+                  ],
+                  "long_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\". The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\".",
+                  "name": "Taj Mahal",
+                  "short_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \""
+                },
+                "id": "0199be14-94f1-734d-92dc-d49c779c6815",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              },
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ABSTRACT",
+                  "images": [],
+                  "name": "Walking Tour",
+                  "short_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\"."
+                },
+                "id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "parent_item_id": "0199be14-94f1-734d-92dc-d49c779c6815",
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              },
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ENTRY_PASS",
+                  "images": [],
+                  "name": "Adult"
+                },
+                "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665_100_199",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "parent_item_id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+                "price": {
+                  "currency": "INR",
+                  "value": "100"
+                },
+                "quantity": {
+                  "selected": {
+                    "count": 1
+                  }
+                },
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              }
+            ],
+            "payments": [
+              {
+                "collected_by": "BAP",
+                "id": "7bdd35af-be0b-43cb-adc3-27950e68888e",
+                "params": {
+                  "amount": "100.00",
+                  "currency": "INR",
+                  "transaction_id": "HDENTRYPASS0000001348"
+                },
+                "status": "PAID",
+                "type": "PRE-ORDER"
+              }
+            ],
+            "provider": {
+              "descriptor": {
+                "images": [
+                  {
+                    "size_type": "md",
+                    "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/"
+                  }
+                ],
+                "name": "paris tours"
+              },
+              "id": "RZ6C8028",
+              "locations": [
+                {
+                  "descriptor": {
+                    "name": "Delhi",
+                    "short_desc": "agra "
+                  },
+                  "gps": "27.167869,78.050761",
+                  "id": "0199be1a-291c-77c1-8ac6-f74cfc7b9e2f",
+                  "rating": "5"
+                }
+              ]
+            },
+            "quote": {
+              "breakup": [
+                {
+                  "item": {
+                    "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665",
+                    "price": {
+                      "currency": "INR",
+                      "value": "100"
+                    },
+                    "quantity": {
+                      "selected": {
+                        "count": 1
+                      }
+                    }
+                  },
+                  "price": {
+                    "currency": "INR",
+                    "value": "100.00"
+                  },
+                  "title": "BASE_PRICE"
+                },
+                {
+                  "price": {
+                    "currency": "INR",
+                    "value": "0.00"
+                  },
+                  "title": "TAX"
+                }
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "100.00"
+              }
+            },
+            "replacement_terms": [
+              {
+                "external_ref": {
+                  "mimetype": "text/html",
+                  "url": "https://api.unreserved-entry-pass.com/beckn/replacement.html"
+                }
+              }
+            ],
+            "status": "ACTIVE",
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "BAP_TERMS",
+                  "name": "BAP Terms of Engagement"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                    },
+                    "value": "1"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_TYPE"
+                    },
+                    "value": "percent"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_WINDOW"
+                    },
+                    "value": "P30D"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BASIS"
+                    },
+                    "value": "INVOICE_RECEIPT"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "STATIC_TERMS"
+                    },
+                    "value": "https://api.example-bap.com/booking/terms"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "BPP_TERMS",
+                  "name": "BPP Terms of Engagement"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                    },
+                    "value": "1"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_TYPE"
+                    },
+                    "value": "percent"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "STATIC_TERMS"
+                    },
+                    "value": "https://api.example-bap.com/booking/terms"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MANDATORY_ARBITRATION"
+                    },
+                    "value": "true"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "COURT_JURISDICTION"
+                    },
+                    "value": "New Delhi"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "DELAY_INTEREST"
+                    },
+                    "value": "2.5"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_AMOUNT"
+                    },
+                    "value": "99 INR"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_TYPE"
+                    },
+                    "value": "NEFT"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BANK_CODE"
+                    },
+                    "value": "SBIN000001"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BANK_ACCOUNT_NUMBER"
+                    },
+                    "value": "101010101010"
+                  }
+                ]
+              }
+            ],
+            "updated_at": "2025-10-07T18:32:17.547Z"
+          }
+        }
+      },
+      "cancel": {
+        "context": {
+          "action": "cancel",
+          "bap_id": "ondc.preprod.rzervit.com",
+          "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+          "bpp_id": "ondc.preprod.rzervit.com",
+          "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+          "domain": "ONDC:TRV14",
+          "location": {
+            "city": {
+              "code": "std:011"
+            },
+            "country": {
+              "code": "IND"
+            }
+          },
+          "message_id": "8773981c-40cb-4d27-987f-28ad9977211d",
+          "timestamp": "2025-10-07T18:33:47.839Z",
+          "transaction_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd",
+          "ttl": "PT30S",
+          "version": "2.0.0"
+        },
+        "message": {
+          "cancellation_reason_id": "000",
+          "descriptor": {
+            "code": "SOFT_CANCEL",
+            "name": "Visit Cancellation"
+          },
+          "order_id": "1c185eea-0767-4e02-99a8-532ecaed6eb0"
+        }
+      },
+      "on_cancel": {
+        "context": {
+          "action": "on_cancel",
+          "bap_id": "ondc.preprod.rzervit.com",
+          "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+          "bpp_id": "ondc.preprod.rzervit.com",
+          "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+          "domain": "ONDC:TRV14",
+          "location": {
+            "city": {
+              "code": "std:011"
+            },
+            "country": {
+              "code": "IND"
+            }
+          },
+          "message_id": "8773981c-40cb-4d27-987f-28ad9977211d",
+          "timestamp": "2025-10-07T18:33:47.890Z",
+          "transaction_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd",
+          "ttl": "PT30S",
+          "version": "2.0.0"
+        },
+        "message": {
+          "order": {
+            "cancellation": {
+              "cancelled_by": "CONSUMER",
+              "reason": {
+                "descriptor": {
+                  "code": "000"
+                }
+              }
+            },
+            "cancellation_terms": [
+              {
+                "cancel_by": {
+                  "duration": "PT2H30M",
+                  "label": "DURATION"
+                },
+                "cancellation_eligible": true,
+                "cancellation_fee": {
+                  "percentage": "10"
+                },
+                "fulfillment_state": {
+                  "descriptor": {
+                    "code": "CONFIRMED"
+                  }
+                }
+              }
+            ],
+            "created_at": "2025-10-07T18:32:17.544Z",
+            "fulfillments": [
+              {
+                "id": "0199be1c-db4b-72a9-beff-94a6d37d793c",
+                "state": {
+                  "descriptor": {
+                    "code": "CONFIRMED"
+                  }
+                },
+                "stops": [
+                  {
+                    "authorization": {
+                      "status": "UNCLAIMED",
+                      "token": "MWMxODVlZWEtMDc2Ny00ZTAyLTk5YTgtNTMyZWNhZWQ2ZWIw",
+                      "type": "QR",
+                      "valid_to": "2025-10-09T10:30:00.000Z"
+                    },
+                    "time": {
+                      "range": {
+                        "end": "2025-10-09T10:30:00.000Z",
+                        "start": "2025-10-09T02:30:00.000Z"
+                      }
+                    },
+                    "type": "START"
+                  }
+                ],
+                "type": "VISIT",
+                "vehicle": {
+                  "category": "SITE"
+                }
+              }
+            ],
+            "id": "1c185eea-0767-4e02-99a8-532ecaed6eb0",
+            "items": [
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ABSTRACT",
+                  "images": [
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/3122522f-dba9-43aa-aa57-ad5d0926b0ab"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/ec9aa5cb-0d30-4dfd-8247-733ca6623f54"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/c6df476c-b12f-4c45-91b3-a630dcc2a494"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/96f298df-b713-4b23-8c42-4924fc5f1aae"
+                    }
+                  ],
+                  "long_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\". The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\".",
+                  "name": "Taj Mahal",
+                  "short_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \""
+                },
+                "id": "0199be14-94f1-734d-92dc-d49c779c6815",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              },
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ABSTRACT",
+                  "images": [],
+                  "name": "Walking Tour",
+                  "short_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\"."
+                },
+                "id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "parent_item_id": "0199be14-94f1-734d-92dc-d49c779c6815",
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              },
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ENTRY_PASS",
+                  "images": [],
+                  "name": "Adult"
+                },
+                "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665_100_199",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "parent_item_id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+                "price": {
+                  "currency": "INR",
+                  "value": "100"
+                },
+                "quantity": {
+                  "selected": {
+                    "count": 1
+                  }
+                },
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              }
+            ],
+            "payments": [
+              {
+                "collected_by": "BAP",
+                "id": "7bdd35af-be0b-43cb-adc3-27950e68888e",
+                "params": {
+                  "amount": "100.00",
+                  "currency": "INR",
+                  "transaction_id": "HDENTRYPASS0000001348"
+                },
+                "status": "PAID",
+                "type": "PRE-ORDER"
+              }
+            ],
+            "provider": {
+              "descriptor": {
+                "images": [
+                  {
+                    "size_type": "md",
+                    "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/"
+                  }
+                ],
+                "name": "paris tours"
+              },
+              "id": "RZ6C8028",
+              "locations": [
+                {
+                  "descriptor": {
+                    "name": "Delhi",
+                    "short_desc": "agra "
+                  },
+                  "gps": "27.167869,78.050761",
+                  "id": "0199be1a-291c-77c1-8ac6-f74cfc7b9e2f",
+                  "rating": "5"
+                }
+              ]
+            },
+            "quote": {
+              "breakup": [
+                {
+                  "item": {
+                    "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665",
+                    "price": {
+                      "currency": "INR",
+                      "value": "100"
+                    },
+                    "quantity": {
+                      "selected": {
+                        "count": 1
+                      }
+                    }
+                  },
+                  "price": {
+                    "currency": "INR",
+                    "value": "100.00"
+                  },
+                  "title": "BASE_PRICE"
+                },
+                {
+                  "price": {
+                    "currency": "INR",
+                    "value": "0.00"
+                  },
+                  "title": "TAX"
+                },
+                {
+                  "item": {
+                    "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665_100_199",
+                    "price": {
+                      "currency": "INR",
+                      "value": "-100"
+                    },
+                    "quantity": {
+                      "selected": {
+                        "count": 1
+                      }
+                    }
+                  },
+                  "price": {
+                    "currency": "INR",
+                    "value": "-100.00"
+                  },
+                  "title": "REFUND"
+                },
+                {
+                  "price": {
+                    "currency": "INR",
+                    "value": "0"
+                  },
+                  "title": "CANCELLATION_CHARGES"
+                }
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              }
+            },
+            "replacement_terms": [
+              {
+                "external_ref": {
+                  "mimetype": "text/html",
+                  "url": "https://api.unreserved-entry-pass.com/beckn/replacement.html"
+                }
+              }
+            ],
+            "status": "SOFT_CANCEL",
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "BAP_TERMS",
+                  "name": "BAP Terms of Engagement"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                    },
+                    "value": "1"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_TYPE"
+                    },
+                    "value": "percent"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_WINDOW"
+                    },
+                    "value": "P30D"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BASIS"
+                    },
+                    "value": "INVOICE_RECEIPT"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "STATIC_TERMS"
+                    },
+                    "value": "https://api.example-bap.com/booking/terms"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "BPP_TERMS",
+                  "name": "BPP Terms of Engagement"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                    },
+                    "value": "1"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_TYPE"
+                    },
+                    "value": "percent"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "STATIC_TERMS"
+                    },
+                    "value": "https://api.example-bap.com/booking/terms"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MANDATORY_ARBITRATION"
+                    },
+                    "value": "true"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "COURT_JURISDICTION"
+                    },
+                    "value": "New Delhi"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "DELAY_INTEREST"
+                    },
+                    "value": "2.5"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_AMOUNT"
+                    },
+                    "value": "0.00"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_TYPE"
+                    },
+                    "value": "NEFT"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BANK_CODE"
+                    },
+                    "value": "SBIN000001"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BANK_ACCOUNT_NUMBER"
+                    },
+                    "value": "101010101010"
+                  }
+                ]
+              }
+            ],
+            "updated_at": "2025-10-07T18:33:47.890Z"
+          }
+        }
+      },
+      "cancel_1": {
+        "context": {
+          "action": "cancel",
+          "bap_id": "ondc.preprod.rzervit.com",
+          "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+          "bpp_id": "ondc.preprod.rzervit.com",
+          "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+          "domain": "ONDC:TRV14",
+          "location": {
+            "city": {
+              "code": "std:011"
+            },
+            "country": {
+              "code": "IND"
+            }
+          },
+          "message_id": "ec3f274e-faa9-4353-aa2e-067cd32a676c",
+          "timestamp": "2025-10-07T18:33:48.112Z",
+          "transaction_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd",
+          "ttl": "PT30S",
+          "version": "2.0.0"
+        },
+        "message": {
+          "cancellation_reason_id": "000",
+          "descriptor": {
+            "code": "CONFIRM_CANCEL",
+            "name": "Visit Cancellation"
+          },
+          "order_id": "1c185eea-0767-4e02-99a8-532ecaed6eb0"
+        }
+      },
+      "on_cance_l": {
+        "context": {
+          "action": "on_cancel",
+          "bap_id": "ondc.preprod.rzervit.com",
+          "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+          "bpp_id": "ondc.preprod.rzervit.com",
+          "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+          "domain": "ONDC:TRV14",
+          "location": {
+            "city": {
+              "code": "std:011"
+            },
+            "country": {
+              "code": "IND"
+            }
+          },
+          "message_id": "ec3f274e-faa9-4353-aa2e-067cd32a676c",
+          "timestamp": "2025-10-07T18:33:48.223Z",
+          "transaction_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd",
+          "ttl": "PT30S",
+          "version": "2.0.0"
+        },
+        "message": {
+          "order": {
+            "cancellation": {
+              "cancelled_by": "CONSUMER",
+              "reason": {
+                "descriptor": {
+                  "code": "000"
+                }
+              }
+            },
+            "cancellation_terms": [
+              {
+                "cancel_by": {
+                  "duration": "PT2H30M",
+                  "label": "DURATION"
+                },
+                "cancellation_eligible": true,
+                "cancellation_fee": {
+                  "percentage": "10"
+                },
+                "fulfillment_state": {
+                  "descriptor": {
+                    "code": "CONFIRMED"
+                  }
+                }
+              }
+            ],
+            "created_at": "2025-10-07T18:32:17.544Z",
+            "fulfillments": [
+              {
+                "id": "0199be1c-db4b-72a9-beff-94a6d37d793c",
+                "state": {
+                  "descriptor": {
+                    "code": "CONFIRMED"
+                  }
+                },
+                "stops": [
+                  {
+                    "authorization": {
+                      "status": "UNCLAIMED",
+                      "token": "MWMxODVlZWEtMDc2Ny00ZTAyLTk5YTgtNTMyZWNhZWQ2ZWIw",
+                      "type": "QR",
+                      "valid_to": "2025-10-09T10:30:00.000Z"
+                    },
+                    "time": {
+                      "range": {
+                        "end": "2025-10-09T10:30:00.000Z",
+                        "start": "2025-10-09T02:30:00.000Z"
+                      }
+                    },
+                    "type": "START"
+                  }
+                ],
+                "type": "VISIT",
+                "vehicle": {
+                  "category": "SITE"
+                }
+              }
+            ],
+            "id": "1c185eea-0767-4e02-99a8-532ecaed6eb0",
+            "items": [
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ABSTRACT",
+                  "images": [
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/3122522f-dba9-43aa-aa57-ad5d0926b0ab"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/ec9aa5cb-0d30-4dfd-8247-733ca6623f54"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/c6df476c-b12f-4c45-91b3-a630dcc2a494"
+                    },
+                    {
+                      "size_type": "xl",
+                      "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/96f298df-b713-4b23-8c42-4924fc5f1aae"
+                    }
+                  ],
+                  "long_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\". The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\".",
+                  "name": "Taj Mahal",
+                  "short_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \""
+                },
+                "id": "0199be14-94f1-734d-92dc-d49c779c6815",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              },
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ABSTRACT",
+                  "images": [],
+                  "name": "Walking Tour",
+                  "short_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\"."
+                },
+                "id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "parent_item_id": "0199be14-94f1-734d-92dc-d49c779c6815",
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              },
+              {
+                "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+                "descriptor": {
+                  "code": "ENTRY_PASS",
+                  "images": [],
+                  "name": "Adult"
+                },
+                "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665_100_199",
+                "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+                "parent_item_id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+                "price": {
+                  "currency": "INR",
+                  "value": "100"
+                },
+                "quantity": {
+                  "selected": {
+                    "count": 1
+                  }
+                },
+                "tags": [
+                  {
+                    "descriptor": {
+                      "code": "ADDITIONAL_DETAILS_REQUIRED"
+                    },
+                    "value": "FALSE"
+                  }
+                ],
+                "time": {
+                  "duration": "P2D",
+                  "label": "VALIDITY"
+                }
+              }
+            ],
+            "payments": [
+              {
+                "collected_by": "BAP",
+                "id": "7bdd35af-be0b-43cb-adc3-27950e68888e",
+                "params": {
+                  "amount": "100.00",
+                  "currency": "INR",
+                  "transaction_id": "HDENTRYPASS0000001348"
+                },
+                "status": "PAID",
+                "type": "PRE-ORDER"
+              }
+            ],
+            "provider": {
+              "descriptor": {
+                "images": [
+                  {
+                    "size_type": "md",
+                    "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/"
+                  }
+                ],
+                "name": "paris tours"
+              },
+              "id": "RZ6C8028",
+              "locations": [
+                {
+                  "descriptor": {
+                    "name": "Delhi",
+                    "short_desc": "agra "
+                  },
+                  "gps": "27.167869,78.050761",
+                  "id": "0199be1a-291c-77c1-8ac6-f74cfc7b9e2f",
+                  "rating": "5"
+                }
+              ]
+            },
+            "quote": {
+              "breakup": [
+                {
+                  "item": {
+                    "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665",
+                    "price": {
+                      "currency": "INR",
+                      "value": "100"
+                    },
+                    "quantity": {
+                      "selected": {
+                        "count": 1
+                      }
+                    }
+                  },
+                  "price": {
+                    "currency": "INR",
+                    "value": "100.00"
+                  },
+                  "title": "BASE_PRICE"
+                },
+                {
+                  "price": {
+                    "currency": "INR",
+                    "value": "0.00"
+                  },
+                  "title": "TAX"
+                },
+                {
+                  "item": {
+                    "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665_100_199",
+                    "price": {
+                      "currency": "INR",
+                      "value": "-100"
+                    },
+                    "quantity": {
+                      "selected": {
+                        "count": 1
+                      }
+                    }
+                  },
+                  "price": {
+                    "currency": "INR",
+                    "value": "-100.00"
+                  },
+                  "title": "REFUND"
+                },
+                {
+                  "price": {
+                    "currency": "INR",
+                    "value": "0"
+                  },
+                  "title": "CANCELLATION_CHARGES"
+                }
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "0.00"
+              }
+            },
+            "replacement_terms": [
+              {
+                "external_ref": {
+                  "mimetype": "text/html",
+                  "url": "https://api.unreserved-entry-pass.com/beckn/replacement.html"
+                }
+              }
+            ],
+            "status": "CANCELLED",
+            "tags": [
+              {
+                "descriptor": {
+                  "code": "BAP_TERMS",
+                  "name": "BAP Terms of Engagement"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                    },
+                    "value": "1"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_TYPE"
+                    },
+                    "value": "percent"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_WINDOW"
+                    },
+                    "value": "P30D"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BASIS"
+                    },
+                    "value": "INVOICE_RECEIPT"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "STATIC_TERMS"
+                    },
+                    "value": "https://api.example-bap.com/booking/terms"
+                  }
+                ]
+              },
+              {
+                "descriptor": {
+                  "code": "BPP_TERMS",
+                  "name": "BPP Terms of Engagement"
+                },
+                "display": false,
+                "list": [
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                    },
+                    "value": "1"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "BUYER_FINDER_FEES_TYPE"
+                    },
+                    "value": "percent"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "STATIC_TERMS"
+                    },
+                    "value": "https://api.example-bap.com/booking/terms"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "MANDATORY_ARBITRATION"
+                    },
+                    "value": "true"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "COURT_JURISDICTION"
+                    },
+                    "value": "New Delhi"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "DELAY_INTEREST"
+                    },
+                    "value": "2.5"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_AMOUNT"
+                    },
+                    "value": "0.00"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_TYPE"
+                    },
+                    "value": "NEFT"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BANK_CODE"
+                    },
+                    "value": "SBIN000001"
+                  },
+                  {
+                    "descriptor": {
+                      "code": "SETTLEMENT_BANK_ACCOUNT_NUMBER"
+                    },
+                    "value": "101010101010"
+                  }
+                ]
+              }
+            ],
+            "updated_at": "2025-10-07T18:33:48.223Z"
+          }
+        }
+      }
+    },
+    "reportTimestamp": "2025-10-08T11:29:25.176Z"
+  },
+  "signature": "5ba/8kQ50+XV79P6ujRMnafn1jJ2+9b21HnN0S2+5khkhURh1LLJt8yVXn0mlTwK800y3Hy8euA3HcJNZkMpCg==",
+  "signTimestamp": "2025-10-08T11:29:25.176Z"
+}

@@ -1,0 +1,27 @@
+{
+  "context": {
+    "action": "cancel",
+    "bap_id": "ondc.preprod.rzervit.com",
+    "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+    "bpp_id": "ondc.preprod.rzervit.com",
+    "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+    "domain": "ONDC:TRV14",
+    "location": {
+      "city": { "code": "std:011" },
+      "country": { "code": "IND" }
+    },
+    "message_id": "ec3f274e-faa9-4353-aa2e-067cd32a676c",
+    "timestamp": "2025-10-07T18:33:48.112Z",
+    "transaction_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd",
+    "ttl": "PT30S",
+    "version": "2.0.0"
+  },
+  "message": {
+    "cancellation_reason_id": "000",
+    "descriptor": {
+      "code": "CONFIRM_CANCEL",
+      "name": "Visit Cancellation"
+    },
+    "order_id": "1c185eea-0767-4e02-99a8-532ecaed6eb0"
+  }
+}

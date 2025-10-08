@@ -1,0 +1,77 @@
+{
+  "success": false,
+  "response": {
+    "message": "Logs were not verified successfully",
+    "report": {
+      "cancel": {
+        "schemaErr0": "/message/cancellation_reason_id must be equal to one of the allowed values (000)"
+      }
+    },
+    "bpp_id": "ondc.preprod.rzervit.com",
+    "bap_id": "ondc.preprod.rzervit.com",
+    "domain": "ONDC:TRV14",
+    "payload": {
+      "cancel": {
+        "context": {
+          "action": "cancel",
+          "bap_id": "ondc.preprod.rzervit.com",
+          "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+          "bpp_id": "ondc.preprod.rzervit.com",
+          "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+          "domain": "ONDC:TRV14",
+          "location": {
+            "city": {
+              "code": "std:011"
+            },
+            "country": {
+              "code": "IND"
+            }
+          },
+          "message_id": "26eb6fdf-f832-4c37-aa2a-f31cda526f12",
+          "timestamp": "2025-10-07T19:16:11.600Z",
+          "transaction_id": "3022c0bd-dd94-4132-9f42-2015c5ad37ab",
+          "ttl": "PT30S",
+          "version": "2.0.0"
+        },
+        "message": {
+          "cancellation_reason_id": "001",
+          "descriptor": {
+            "code": "SOFT_CANCEL",
+            "name": "Visit Cancellation"
+          },
+          "order_id": "e4b33d77-9ba1-424a-ab33-be81df312bbd"
+        }
+      },
+      "on_cancel": {
+        "context": {
+          "action": "on_cancel",
+          "bap_id": "ondc.preprod.rzervit.com",
+          "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+          "bpp_id": "ondc.preprod.rzervit.com",
+          "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+          "domain": "ONDC:TRV14",
+          "location": {
+            "city": {
+              "code": "std:011"
+            },
+            "country": {
+              "code": "IND"
+            }
+          },
+          "message_id": "26eb6fdf-f832-4c37-aa2a-f31cda526f12",
+          "timestamp": "2025-10-07T19:16:11.717Z",
+          "transaction_id": "3022c0bd-dd94-4132-9f42-2015c5ad37ab",
+          "ttl": "PT30S",
+          "version": "2.0.0"
+        },
+        "error": {
+          "code": "93207",
+          "message": "Cancellation not possible for the selected item"
+        }
+      }
+    },
+    "reportTimestamp": "2025-10-08T11:47:52.871Z"
+  },
+  "signature": "iKbbEP/e5QDsDS6/H+mK56TyoD6G3ytqsVNw/+FTABKoagz/krRW96Fi/PU7G7xI66B2b+7M0jzJupIXf+8sBg==",
+  "signTimestamp": "2025-10-08T11:47:52.873Z"
+}

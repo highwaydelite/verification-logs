@@ -1,6 +1,6 @@
 {
   "context": {
-    "action": "on_status",
+    "action": "on_cancel",
     "bap_id": "ondc.preprod.rzervit.com",
     "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
     "bpp_id": "ondc.preprod.rzervit.com",
@@ -10,18 +10,17 @@
       "city": { "code": "std:011" },
       "country": { "code": "IND" }
     },
-    "message_id": "5b1767e7-154f-4dac-a1fb-a3a88c0535b2",
-    "timestamp": "2025-10-07T18:33:47.759Z",
+    "message_id": "8773981c-40cb-4d27-987f-28ad9977211d",
+    "timestamp": "2025-10-07T18:33:47.890Z",
     "transaction_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd",
     "ttl": "PT30S",
     "version": "2.0.0"
   },
   "message": {
     "order": {
-      "billing": {
-        "email": "john@example.com",
-        "name": "john Doe",
-        "phone": "+91-9879876787"
+      "cancellation": {
+        "cancelled_by": "CONSUMER",
+        "reason": { "descriptor": { "code": "000" } }
       },
       "cancellation_terms": [
         {
@@ -167,9 +166,22 @@
           {
             "price": { "currency": "INR", "value": "0.00" },
             "title": "TAX"
+          },
+          {
+            "item": {
+              "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665_100_199",
+              "price": { "currency": "INR", "value": "-100" },
+              "quantity": { "selected": { "count": 1 } }
+            },
+            "price": { "currency": "INR", "value": "-100.00" },
+            "title": "REFUND"
+          },
+          {
+            "price": { "currency": "INR", "value": "0" },
+            "title": "CANCELLATION_CHARGES"
           }
         ],
-        "price": { "currency": "INR", "value": "100.00" }
+        "price": { "currency": "INR", "value": "0.00" }
       },
       "replacement_terms": [
         {
@@ -179,7 +191,7 @@
           }
         }
       ],
-      "status": "ACTIVE",
+      "status": "SOFT_CANCEL",
       "tags": [
         {
           "descriptor": {
@@ -237,10 +249,13 @@
               "descriptor": { "code": "COURT_JURISDICTION" },
               "value": "New Delhi"
             },
-            { "descriptor": { "code": "DELAY_INTEREST" }, "value": "2.5" },
+            {
+              "descriptor": { "code": "DELAY_INTEREST" },
+              "value": "2.5"
+            },
             {
               "descriptor": { "code": "SETTLEMENT_AMOUNT" },
-              "value": "99 INR"
+              "value": "0.00"
             },
             {
               "descriptor": { "code": "SETTLEMENT_TYPE" },
@@ -257,7 +272,7 @@
           ]
         }
       ],
-      "updated_at": "2025-10-07T18:32:17.547Z"
+      "updated_at": "2025-10-07T18:33:47.890Z"
     }
   }
 }
