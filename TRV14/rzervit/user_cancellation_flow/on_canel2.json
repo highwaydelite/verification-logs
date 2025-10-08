@@ -1,0 +1,293 @@
+{
+  "context": {
+    "action": "on_cancel",
+    "bap_id": "ondc.preprod.rzervit.com",
+    "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+    "bpp_id": "ondc.preprod.rzervit.com",
+    "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+    "domain": "ONDC:TRV14",
+    "location": {
+      "city": { "code": "std:011" },
+      "country": { "code": "IND" }
+    },
+    "message_id": "04d2c6c0-e720-4c82-a188-3dbb78933eee",
+    "timestamp": "2025-10-07T11:53:22.912Z",
+    "transaction_id": "d182aba2-d08d-4fb6-8291-542bb64e954b",
+    "ttl": "PT30S",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "cancellation": {
+        "cancelled_by": "CONSUMER",
+        "reason": { "descriptor": { "code": "002" } }
+      },
+      "cancellation_terms": [
+        {
+          "cancel_by": { "duration": "PT2H30M", "label": "DURATION" },
+          "cancellation_eligible": true,
+          "cancellation_fee": { "percentage": "10" },
+          "fulfillment_state": { "descriptor": { "code": "CONFIRMED" } }
+        }
+      ],
+      "created_at": "2025-10-07T11:26:34.478Z",
+      "fulfillments": [
+        {
+          "id": "0199be1c-db4a-7b94-b1e4-0eb95822f70c",
+          "state": { "descriptor": { "code": "CONFIRMED" } },
+          "stops": [
+            {
+              "authorization": {
+                "status": "UNCLAIMED",
+                "token": "MTZmMjRlMWYtMjFmNC00MGRhLWJmNWItNGFkN2U4MTliNTQx",
+                "type": "QR",
+                "valid_to": "2025-10-08T10:30:00.000Z"
+              },
+              "time": {
+                "range": {
+                  "end": "2025-10-08T10:30:00.000Z",
+                  "start": "2025-10-08T02:30:00.000Z"
+                }
+              },
+              "type": "START"
+            }
+          ],
+          "type": "VISIT",
+          "vehicle": { "category": "SITE" }
+        }
+      ],
+      "id": "16f24e1f-21f4-40da-bf5b-4ad7e819b541",
+      "items": [
+        {
+          "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+          "descriptor": {
+            "code": "ABSTRACT",
+            "images": [
+              {
+                "size_type": "xl",
+                "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/3122522f-dba9-43aa-aa57-ad5d0926b0ab"
+              },
+              {
+                "size_type": "xl",
+                "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/ec9aa5cb-0d30-4dfd-8247-733ca6623f54"
+              },
+              {
+                "size_type": "xl",
+                "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/c6df476c-b12f-4c45-91b3-a630dcc2a494"
+              },
+              {
+                "size_type": "xl",
+                "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/96f298df-b713-4b23-8c42-4924fc5f1aae"
+              }
+            ],
+            "long_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\". The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\".",
+            "name": "Taj Mahal",
+            "short_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \""
+          },
+          "id": "0199be14-94f1-734d-92dc-d49c779c6815",
+          "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+          "tags": [
+            {
+              "descriptor": { "code": "ADDITIONAL_DETAILS_REQUIRED" },
+              "value": "FALSE"
+            }
+          ],
+          "time": { "duration": "P2D", "label": "VALIDITY" }
+        },
+        {
+          "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+          "descriptor": {
+            "code": "ABSTRACT",
+            "images": [],
+            "name": "Walking Tour",
+            "short_desc": "The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being \"the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage\"."
+          },
+          "id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+          "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+          "parent_item_id": "0199be14-94f1-734d-92dc-d49c779c6815",
+          "tags": [
+            {
+              "descriptor": { "code": "ADDITIONAL_DETAILS_REQUIRED" },
+              "value": "FALSE"
+            }
+          ],
+          "time": { "duration": "P2D", "label": "VALIDITY" }
+        },
+        {
+          "category_ids": ["fc688846-1feb-4bf2-970a-036e4c2acbc7"],
+          "descriptor": {
+            "code": "ENTRY_PASS",
+            "images": [],
+            "name": "Adult"
+          },
+          "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665_100_200",
+          "location_ids": ["0199be1a-291c-77c1-8ac6-f74cfc7b9e2f"],
+          "parent_item_id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+          "price": { "currency": "INR", "value": "100" },
+          "quantity": { "selected": { "count": 1 } },
+          "tags": [
+            {
+              "descriptor": { "code": "ADDITIONAL_DETAILS_REQUIRED" },
+              "value": "FALSE"
+            }
+          ],
+          "time": { "duration": "P2D", "label": "VALIDITY" }
+        }
+      ],
+      "payments": [
+        {
+          "collected_by": "BAP",
+          "id": "e7d4f309-3845-4e53-b1c4-d323d57784c0",
+          "params": {
+            "amount": "100.00",
+            "currency": "INR",
+            "transaction_id": "HDENTRYPASS0000001341"
+          },
+          "status": "PAID",
+          "type": "PRE-ORDER"
+        }
+      ],
+      "provider": {
+        "descriptor": {
+          "images": [
+            {
+              "size_type": "md",
+              "url": "https://pub-208b9f46501e42dbba9b0be237d52f2c.r2.dev/"
+            }
+          ],
+          "name": "paris tours"
+        },
+        "id": "RZ6C8028",
+        "locations": [
+          {
+            "descriptor": { "name": "Delhi", "short_desc": "agra " },
+            "gps": "27.167869,78.050761",
+            "id": "0199be1a-291c-77c1-8ac6-f74cfc7b9e2f",
+            "rating": "5"
+          }
+        ]
+      },
+      "quote": {
+        "breakup": [
+          {
+            "item": {
+              "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665",
+              "price": { "currency": "INR", "value": "100" },
+              "quantity": { "selected": { "count": 1 } }
+            },
+            "price": { "currency": "INR", "value": "100.00" },
+            "title": "BASE_PRICE"
+          },
+          {
+            "price": { "currency": "INR", "value": "0.00" },
+            "title": "TAX"
+          },
+          {
+            "item": {
+              "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665_100_200",
+              "price": { "currency": "INR", "value": "-100" },
+              "quantity": { "selected": { "count": 1 } }
+            },
+            "price": { "currency": "INR", "value": "-100.00" },
+            "title": "REFUND"
+          },
+          {
+            "price": { "currency": "INR", "value": "10" },
+            "title": "CANCELLATION_CHARGES"
+          }
+        ],
+        "price": { "currency": "INR", "value": "10.00" }
+      },
+      "replacement_terms": [
+        {
+          "external_ref": {
+            "mimetype": "text/html",
+            "url": "https://api.unreserved-entry-pass.com/beckn/replacement.html"
+          }
+        }
+      ],
+      "status": "CANCELLED",
+      "tags": [
+        {
+          "descriptor": {
+            "code": "BAP_TERMS",
+            "name": "BAP Terms of Engagement"
+          },
+          "display": false,
+          "list": [
+            {
+              "descriptor": { "code": "BUYER_FINDER_FEES_PERCENTAGE" },
+              "value": "1"
+            },
+            {
+              "descriptor": { "code": "BUYER_FINDER_FEES_TYPE" },
+              "value": "percent"
+            },
+            {
+              "descriptor": { "code": "SETTLEMENT_WINDOW" },
+              "value": "P30D"
+            },
+            {
+              "descriptor": { "code": "SETTLEMENT_BASIS" },
+              "value": "INVOICE_RECEIPT"
+            },
+            {
+              "descriptor": { "code": "STATIC_TERMS" },
+              "value": "https://api.example-bap.com/booking/terms"
+            }
+          ]
+        },
+        {
+          "descriptor": {
+            "code": "BPP_TERMS",
+            "name": "BPP Terms of Engagement"
+          },
+          "display": false,
+          "list": [
+            {
+              "descriptor": { "code": "BUYER_FINDER_FEES_PERCENTAGE" },
+              "value": "1"
+            },
+            {
+              "descriptor": { "code": "BUYER_FINDER_FEES_TYPE" },
+              "value": "percent"
+            },
+            {
+              "descriptor": { "code": "STATIC_TERMS" },
+              "value": "https://api.example-bap.com/booking/terms"
+            },
+            {
+              "descriptor": { "code": "MANDATORY_ARBITRATION" },
+              "value": "true"
+            },
+            {
+              "descriptor": { "code": "COURT_JURISDICTION" },
+              "value": "New Delhi"
+            },
+            {
+              "descriptor": { "code": "DELAY_INTEREST" },
+              "value": "2.5"
+            },
+            {
+              "descriptor": { "code": "SETTLEMENT_AMOUNT" },
+              "value": "9.90"
+            },
+            {
+              "descriptor": { "code": "SETTLEMENT_TYPE" },
+              "value": "NEFT"
+            },
+            {
+              "descriptor": { "code": "SETTLEMENT_BANK_CODE" },
+              "value": "SBIN000001"
+            },
+            {
+              "descriptor": { "code": "SETTLEMENT_BANK_ACCOUNT_NUMBER" },
+              "value": "101010101010"
+            }
+          ]
+        }
+      ],
+      "updated_at": "2025-10-07T11:53:22.904Z"
+    }
+  }
+}

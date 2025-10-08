@@ -1,0 +1,20 @@
+{
+  "context": {
+    "action": "status",
+    "bap_id": "ondc.preprod.rzervit.com",
+    "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+    "bpp_id": "ondc.preprod.rzervit.com",
+    "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+    "domain": "ONDC:TRV14",
+    "location": {
+      "city": { "code": "std:011" },
+      "country": { "code": "IND" }
+    },
+    "message_id": "5b1767e7-154f-4dac-a1fb-a3a88c0535b2",
+    "timestamp": "2025-10-07T18:33:47.636Z",
+    "transaction_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd",
+    "ttl": "PT30S",
+    "version": "2.0.0"
+  },
+  "message": { "ref_id": "fa75475b-ec5e-4b6f-a36b-7b0cb2597bcd" }
+}

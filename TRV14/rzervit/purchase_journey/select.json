@@ -1,0 +1,47 @@
+{
+  "context": {
+    "action": "select",
+    "bap_id": "ondc.preprod.rzervit.com",
+    "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+    "bpp_id": "ondc.preprod.rzervit.com",
+    "bpp_uri": "https://ondc.preprod.rzervit.com/trv14/seller",
+    "domain": "ONDC:TRV14",
+    "location": {
+      "city": { "code": "std:011" },
+      "country": { "code": "IND" }
+    },
+    "message_id": "d55356cd-1ec0-4502-9a64-cfc6d4ca08cd",
+    "timestamp": "2025-10-07T11:20:57.616Z",
+    "transaction_id": "d182aba2-d08d-4fb6-8291-542bb64e954b",
+    "ttl": "PT30S",
+    "version": "2.0.0"
+  },
+  "message": {
+    "order": {
+      "fulfillments": [
+        {
+          "id": "0199be1c-db4a-7b94-b1e4-0eb95822f70c",
+          "stops": [
+            {
+              "time": {
+                "range": {
+                  "end": "2025-10-08T10:30:00.000Z",
+                  "start": "2025-10-08T02:30:00.000Z"
+                }
+              },
+              "type": "START"
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "0199be1c-4270-7a86-b83b-7acaf6e5b665_100.00_200",
+          "parent_item_id": "0199be1c-1ca2-7feb-8612-ea8b8b5bfa0e",
+          "quantity": { "selected": { "count": 1 } }
+        }
+      ],
+      "provider": { "id": "RZ6C8028" }
+    }
+  }
+}
