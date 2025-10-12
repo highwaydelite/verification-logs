@@ -1,0 +1,23 @@
+{
+  "context": {
+    "action": "report",
+    "bap_id": "ondc.preprod.rzervit.com",
+    "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+    "bpp_id": "rsf-mock-service.ondc.org/seller_protocol_server_preprod",
+    "bpp_uri": "https://rsf-mock-service.ondc.org/seller_protocol_server_preprod",
+    "domain": "ONDC:NTS10",
+    "location": {
+      "city": { "code": "std:080" },
+      "country": { "code": "IND" }
+    },
+    "message_id": "6c612dde-ac57-4a3b-9af7-738d8e415436",
+    "timestamp": "2025-10-12T07:41:06.715Z",
+    "transaction_id": "4784c17d-buyb-401a-ad31-6e1dd01b6422",
+    "ttl": "P1D",
+    "version": "2.0.0"
+  },
+  "message": {
+    "ref_message_id": "55b9af24-3f51-495e-986b-46abafbadcfa",
+    "ref_transaction_id": "4784c17d-buyb-401a-ad31-6e1dd01b6422"
+  }
+}

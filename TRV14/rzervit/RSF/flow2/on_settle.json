@@ -1,0 +1,52 @@
+{
+  "context": {
+    "action": "on_settle",
+    "bap_id": "ondc.preprod.rzervit.com",
+    "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+    "bpp_id": "rsf-mock-service.ondc.org/seller_protocol_server_preprod",
+    "bpp_uri": "https://rsf-mock-service.ondc.org/seller_protocol_server_preprod",
+    "domain": "ONDC:NTS10",
+    "location": {
+      "city": { "code": "std:080" },
+      "country": { "code": "IND" }
+    },
+    "message_id": "55b9af24-3f51-495e-986b-46abafbadcfa",
+    "timestamp": "2025-10-12T07:40:13.569Z",
+    "transaction_id": "4784c17d-buyb-401a-ad31-6e1dd01b6422",
+    "ttl": "P1D",
+    "version": "2.0.0"
+  },
+  "message": {
+    "collector_app_id": "ondc.preprod.rzervit.com",
+    "receiver_app_id": "SellerAppTestdata12.com",
+    "settlement": {
+      "id": "40178de6-5d92-413f-8c75-0042f0337a23",
+      "orders": [
+        {
+          "collector": { "amount": { "currency": "INR", "value": "5" } },
+          "id": "fbe65da8-f249-4128-b2c6-e9552d353437",
+          "inter_participant": {
+            "amount": { "currency": "INR", "value": "95" },
+            "error": {
+              "code": "70023",
+              "message": "Interparticipant value mismatch"
+            },
+            "reference_no": "1238683618634",
+            "settled_amount": { "currency": "INR", "value": "95" },
+            "status": "NOT_SETTLED"
+          },
+          "self": {
+            "amount": { "currency": "INR", "value": "5" },
+            "error": {
+              "code": "70023",
+              "message": "Collector value mismatch"
+            },
+            "reference_no": "1238683618634",
+            "status": "NOT_SETTLED"
+          }
+        }
+      ],
+      "type": "NP-NP"
+    }
+  }
+}

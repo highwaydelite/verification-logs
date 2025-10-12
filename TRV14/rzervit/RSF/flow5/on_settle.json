@@ -1,0 +1,41 @@
+{
+  "data": {},
+  "level": "info",
+  "message": {
+    "context": "RsfService.onSettle.request",
+    "data": {
+      "context": {
+        "action": "on_settle",
+        "bap_id": "ondc.preprod.rzervit.com",
+        "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+        "bpp_id": "rsf-mock-service.ondc.org/seller_protocol_server_preprod",
+        "bpp_uri": "https://rsf-mock-service.ondc.org/seller_protocol_server_preprod",
+        "domain": "ONDC:NTS10",
+        "location": {
+          "city": { "code": "std:080" },
+          "country": { "code": "IND" }
+        },
+        "message_id": "3ebc0351-2223-46c0-a31a-d2233b150a2c",
+        "timestamp": "2025-10-12T10:30:39.641Z",
+        "transaction_id": "2268136f-buy0-4c4c-84a8-064698e90ede",
+        "ttl": "P1D",
+        "version": "2.0.0"
+      },
+      "message": {
+        "settlement": {
+          "orders": [
+            {
+              "inter_participant": { "status": "SETTLED" },
+              "self": { "reference_no": "1238683618634", "status": "SETTLED" }
+            }
+          ],
+          "type": "NIL"
+        }
+      }
+    },
+    "error": null,
+    "level": 0,
+    "requestId": "req-1760265039656"
+  },
+  "timestamp": "2025-10-12T10:30:39.656Z"
+}

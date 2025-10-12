@@ -1,0 +1,37 @@
+{
+  "context": {
+    "action": "settle",
+    "bap_id": "ondc.preprod.rzervit.com",
+    "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+    "bpp_id": "rsf-mock-service.ondc.org/seller_protocol_server_preprod",
+    "bpp_uri": "https://rsf-mock-service.ondc.org/seller_protocol_server_preprod",
+    "domain": "ONDC:NTS10",
+    "location": {
+      "city": { "code": "std:080" },
+      "country": { "code": "IND" }
+    },
+    "message_id": "8a163cb8-2d07-4a4f-9b48-967ec7b9a5c2",
+    "timestamp": "2025-10-08T12:16:28.884Z",
+    "transaction_id": "cd88304d-buyc-4ffd-ad0b-6580e048b43c",
+    "ttl": "P2D",
+    "version": "2.0.0"
+  },
+  "message": {
+    "collector_app_id": "ondc.preprod.rzervit.com",
+    "receiver_app_id": "SellerAppTestdata12.com",
+    "settlement": {
+      "id": "1a8d0258-db13-4dc2-b796-01f8ee0af361",
+      "orders": [
+        {
+          "collector": { "amount": { "currency": "INR", "value": "2" } },
+          "id": "7f2c0ef9-87df-4ba7-8ec9-55231e62e107",
+          "inter_participant": {
+            "amount": { "currency": "INR", "value": "198" }
+          },
+          "self": { "amount": { "currency": "INR", "value": "2" } }
+        }
+      ],
+      "type": "NP-NP"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "context": {
+    "action": "on_recon",
+    "bap_id": "ondc.preprod.rzervit.com",
+    "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+    "bpp_id": "ondc.preprod.rzervit.com",
+    "bpp_uri": "https://ondc.preprod.rzervit.com/trv14",
+    "domain": "ONDC:NTS10",
+    "location": {
+      "city": { "code": "std:011" },
+      "country": { "code": "IND" }
+    },
+    "message_id": "66f7e05f-5234-4e6c-871c-5941202fffc9",
+    "timestamp": "2025-10-12T09:53:05.994Z",
+    "transaction_id": "4784c17d-buyb-401a-ad31-6e1dd01b6422",
+    "ttl": "P1D",
+    "version": "2.0.0"
+  },
+  "message": {
+    "orders": [
+      {
+        "amount": { "currency": "INR", "value": "100.00" },
+        "id": "fbe65da8-f249-4128-b2c6-e9552d353437",
+        "recon_accord": true,
+        "settlements": [
+          {
+            "amount": {
+              "currency": "INR",
+              "diff_value": "0.00",
+              "value": "100.00"
+            },
+            "commission": {
+              "currency": "INR",
+              "diff_value": "0.00",
+              "value": "1.00"
+            },
+            "due_date": "2025-10-14",
+            "id": "40178de6-5d92-413f-8c75-0042f0337a23",
+            "payment_id": "1ee3fad0-49d4-4079-ba78-33a284cbea04",
+            "settlement_ref_no": "1238683618634",
+            "status": "PENDING",
+            "tcs": {
+              "currency": "INR",
+              "diff_value": "0",
+              "value": "0.00"
+            },
+            "tds": {
+              "currency": "INR",
+              "diff_value": "0",
+              "value": "0.00"
+            },
+            "updated_at": "2025-10-12T07:41:52.053Z",
+            "withholding_amount": {
+              "currency": "INR",
+              "diff_value": "0.00",
+              "value": "1.00"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
