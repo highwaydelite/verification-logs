@@ -1,31 +1,20 @@
 {
-  "data": {},
-  "level": "info",
-  "message": {
-    "context": "RsfService.settle.request",
-    "data": {
-      "context": {
-        "action": "settle",
-        "bap_id": "ondc.preprod.rzervit.com",
-        "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
-        "bpp_id": "rsf-mock-service.ondc.org/seller_protocol_server_preprod",
-        "bpp_uri": "https://rsf-mock-service.ondc.org/seller_protocol_server_preprod",
-        "domain": "ONDC:NTS10",
-        "location": {
-          "city": { "code": "std:080" },
-          "country": { "code": "IND" }
-        },
-        "message_id": "3ebc0351-2223-46c0-a31a-d2233b150a2c",
-        "timestamp": "2025-10-12T10:30:01.908Z",
-        "transaction_id": "2268136f-buy0-4c4c-84a8-064698e90ede",
-        "ttl": "P2D",
-        "version": "2.0.0"
-      },
-      "message": { "settlement": { "type": "NIL" } }
+  "context": {
+    "action": "settle",
+    "bap_id": "ondc.preprod.rzervit.com",
+    "bap_uri": "https://ondc.preprod.rzervit.com/trv14",
+    "bpp_id": "rsf-mock-service.ondc.org/seller_protocol_server_preprod",
+    "bpp_uri": "https://rsf-mock-service.ondc.org/seller_protocol_server_preprod",
+    "domain": "ONDC:NTS10",
+    "location": {
+      "city": { "code": "std:080" },
+      "country": { "code": "IND" }
     },
-    "error": null,
-    "level": 0,
-    "requestId": "req-1760265001908"
+    "message_id": "3ebc0351-2223-46c0-a31a-d2233b150a2c",
+    "timestamp": "2025-10-12T10:30:01.908Z",
+    "transaction_id": "2268136f-buy0-4c4c-84a8-064698e90ede",
+    "ttl": "P2D",
+    "version": "2.0.0"
   },
-  "timestamp": "2025-10-12T10:30:01.908Z"
+  "message": { "settlement": { "type": "NIL" } }
 }
